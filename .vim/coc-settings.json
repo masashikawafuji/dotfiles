@@ -1,0 +1,15 @@
+{
+  "tsserver.disableAutomaticTypeAcquisition": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "graphql",
+    "css",
+    "scss",
+    "html",
+    "yaml"
+  ]
+}

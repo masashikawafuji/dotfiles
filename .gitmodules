@@ -16,3 +16,10 @@
 [submodule ".vim/pack/plugins/start/vim-jsx-pretty"]
 	path = .vim/pack/plugins/start/vim-jsx-pretty
 	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule ".vim/pack/plugins/start/coc.nvim"]
+	path = .vim/pack/plugins/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+	branch = release
+[submodule ".vim/pack/plugins/start/jsonc.vim"]
+	path = .vim/pack/plugins/start/jsonc.vim
+	url = https://github.com/neoclide/jsonc.vim.git

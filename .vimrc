@@ -12,15 +12,27 @@ set hlsearch
 set ignorecase
 set incsearch
 set smartcase
-map <esc> :noh <CR>
 
 " Appearance
 set number
 set encoding=utf-8
 set linebreak
 
+" Key Mappings
+map <esc> :noh <CR>
 
 " Settings for Plugins
 
 " auto-pairs
 let g:AutoPairsFlyMode = 1
+
+" coc.nvim
+let g:coc_node_path = '/Users/masashikawafuji/.nvm/versions/node/v16.14.0/bin/node'
+
+" coc-prettier
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+" coc-css
+autocmd FileType scss setl iskeyword+=@-@
