@@ -126,6 +126,11 @@ module.exports = {
         // set to true to disable auto updates
         disableAutoUpdates: false,
         // for advanced config flags please refer to https://hyper.is/#cfg
+        hypest: {
+            darkmode: true,
+            vibrancyLevel: 0.3,
+            hideControls: true,
+        },
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
@@ -133,10 +138,7 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: [
-      'hypercwd',
-      'hyper-search',
-    ],
+    plugins: ['hypercwd', 'hyper-search', "hyper-hypest"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed

@@ -12,6 +12,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set smartcase
+map <esc> :noh <CR>
 
 " Appearance
 set number
@@ -22,4 +23,4 @@ set linebreak
 " Settings for Plugins
 
 " auto-pairs
-let g:AutoPairsFlyMode=1
+let g:AutoPairsFlyMode = 1
