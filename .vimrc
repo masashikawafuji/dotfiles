@@ -28,6 +28,7 @@ let g:AutoPairsFlyMode = 1
 
 " coc.nvim
 let g:coc_node_path = '/Users/masashikawafuji/.nvm/versions/node/v16.14.0/bin/node'
+let g:coc_global_extensions = ['coc-tsserver', 'coc-prettier', 'coc-emmet', 'coc-eslint', 'coc-css', 'coc-json']
 
 " coc-prettier
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
