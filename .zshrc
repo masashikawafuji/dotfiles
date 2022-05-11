@@ -22,3 +22,5 @@ if [ -h '/usr/local/bin/vim' ]; then
     alias vim='/usr/local/bin/vim'
 fi
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

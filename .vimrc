@@ -23,6 +23,9 @@ map <esc> :noh <CR>
 
 " Settings for Plugins
 
+" fzf
+set rtp+=/opt/homebrew/bin/fzf
+
 " auto-pairs
 let g:AutoPairsFlyMode = 1
 
