@@ -1,26 +1,40 @@
 runtime defaults.vim
 
+" ===================================================================
 " Indenting
+" ===================================================================
 set softtabstop=2
 set expandtab
 set smarttab
 set shiftwidth=2
 set autoindent
 
+" ===================================================================
 " Searching
+" ===================================================================
 set hlsearch
 set ignorecase
 set incsearch
 set smartcase
 
+" ===================================================================
 " Appearance
+" ===================================================================
 set number
 set encoding=utf-8
 set linebreak
 
+" ===================================================================
 " Key Mappings
+" ===================================================================
+" Turn the highlights off  for the current search results.
 map <esc> :noh <CR>
 
+" Insert a new line above the current line.
+nmap - O<esc>j
+
+" Insert a new line above the current line.
+nmap _ o<esc>k
 
 " ===================================================================
 " Settings for Plugins
@@ -31,6 +45,7 @@ set rtp+=/opt/homebrew/bin/fzf
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " auto-pairs
 let g:AutoPairsFlyMode = 1
+nmap <C-l> :Files<CR>
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " coc.nvim
