@@ -50,8 +50,10 @@ nmap <C-l> :Files<CR>
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " coc.nvim
 let g:coc_node_path = '/Users/masashikawafuji/.nvm/versions/node/v16.15.0/bin/node'
-let g:coc_global_extensions = ['coc-tsserver', 'coc-prettier', 'coc-emmet', 'coc-eslint', 'coc-css', 'coc-json']
- 
+let g:coc_global_extensions = ['coc-explorer', 'coc-tsserver', 'coc-graphql', 'coc-prettier', 'coc-emmet', 'coc-eslint', 'coc-css', 'coc-json']
+
+highlight CocFloating ctermfg=16 ctermbg=122
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -214,6 +216,9 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" coc-explorer
+nmap <space>e <Cmd>CocCommand explorer<CR>
 
 " coc-prettier
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
