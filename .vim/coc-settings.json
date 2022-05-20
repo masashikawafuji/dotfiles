@@ -9,7 +9,8 @@
     ],
     "filenames": [],
     "patternMatches": [
-      "^\\.git$"
+      "^\\.git\\b",
+      "\\.swp\\b"
     ]
   },
   "tsserver.disableAutomaticTypeAcquisition": false,
