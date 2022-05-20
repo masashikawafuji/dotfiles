@@ -129,7 +129,7 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
     hypest: {
       darkmode: true,
-      // vibrancyLevel: 0.4,
+      vibrancyLevel: 0.4,
       hideControls: true,
     },
   },
