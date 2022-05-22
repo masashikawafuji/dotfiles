@@ -52,7 +52,7 @@ nmap <C-l> :Files<CR>
 let g:coc_node_path = '/Users/masashikawafuji/.nvm/versions/node/v16.15.0/bin/node'
 let g:coc_global_extensions = ['coc-explorer', 'coc-tsserver', 'coc-graphql', 'coc-prettier', 'coc-emmet', 'coc-eslint', 'coc-css', 'coc-json']
 
-highlight CocFloating ctermfg=16 ctermbg=122
+highlight CocFloating ctermfg=231 ctermbg=16
 
 " TextEdit might fail if hidden is not set.
 set hidden
