@@ -1,6 +1,5 @@
 runtime defaults.vim
 
-" ===================================================================
 " Indenting
 " ===================================================================
 set softtabstop=2
@@ -9,7 +8,6 @@ set smarttab
 set shiftwidth=2
 set autoindent
 
-" ===================================================================
 " Searching
 " ===================================================================
 set hlsearch
@@ -17,14 +15,12 @@ set ignorecase
 set incsearch
 set smartcase
 
-" ===================================================================
 " Appearance
 " ===================================================================
 set number
 set encoding=utf-8
 set linebreak
 
-" ===================================================================
 " Key Mappings
 " ===================================================================
 " Turn the highlights off  for the current search results.
@@ -36,19 +32,20 @@ nmap - O<esc>j
 " Insert a new line above the current line.
 nmap _ o<esc>k
 
-" ===================================================================
 " Settings for Plugins
 " ===================================================================
+"
 " fzf
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set rtp+=/opt/homebrew/bin/fzf
 
-" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " auto-pairs
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 let g:AutoPairsFlyMode = 1
 nmap <C-l> :Files<CR>
 
-" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " coc.nvim
+" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 let g:coc_node_path = '/Users/masashikawafuji/.nvm/versions/node/v16.15.0/bin/node'
 let g:coc_global_extensions = ['coc-explorer', 'coc-tsserver', 'coc-graphql', 'coc-prettier', 'coc-emmet', 'coc-eslint', 'coc-css', 'coc-json']
 
